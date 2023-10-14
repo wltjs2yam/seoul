@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seoul</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="js/js.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header_in">
+      <h1>
+        <span><img src="img/logo_w.png" alt=""></span> 
+
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">명소</a></li>
+          <li><a href="#">음식</a></li>
+          <li><a href="#">쇼핑</a></li>
+          <li><a href="#">엔터테인먼트</a></li>
+          <li><a href="#">자연&관광</a></li>
+        </ul>
+        <button class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </nav>
+      <a href="#" class="trigger">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </a>
+    </div>
+  </header>
+
+  <section id="s1">
+    <video autoplay muted loop>
+      <source src="img/video.mp4" type="video/mp4">
+      이 브라우저는  비디오가 작동되지 않습니다
+    </video>
+      <div class="main_text">
+      <p>역사, 문화, 자연, 쇼핑, 음식 등</p>
+        <br><h2>다양한 매력을 가진 도시 서울을 소개합니다!</h2>
+      </div>
+
+  </section>
+  <!-- 김지선 메인(명소부분)-->
+  <section id="s2">
+    <div class="right">
+      <h2>명소(名所)</h2>
+      <p>서울의 아름답고 특별한 명소들을 살펴보세요.</p>
+      <a href="#"><span>view more</span></a>
+    </div>
+    <div class="left">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/namsantower.jpg" alt="" class="main_img">
+          </div>
+          <div class="swiper-slide"><img src="img/lottetower.jpg" alt="" class="main_img">
+  
+          </div>
+          <div class="swiper-slide"><img src="img/63building.jpg" alt="" class="main_img">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div> 
+    </div>
+  </section>
+  <!-- 닫히는 section 부분까지 명소부분 -->
+  <section id="s3">
+    <h2>음식관련</h2>
+  </section>
+  <section id="s4">
+    <h2>쇼핑관련</h2>
+  </section>
+  <section id="s5">
+    <h2>엔터테인먼트관련</h2>
+  </section>
+  <section id="s6">
+    <h2>자연&관광관련</h2>
+  </section>
+
+  <!-- 이종민 푸터 -->
+  <div class="footer_container">
+    <footer>
+      <div class="logo">
+        <img src="img/logo.png" alt="푸터 로고">
+        
+        <p>
+          03190, 서울특별시 종로구 청계천로85 (31빌딩) 6층
+        </p>
+      </div>
+      
+      <div class="info">
+        <p>운영</p> 
+        <p>월~금, 오전 9시~오후 6시</p> 
+        <p><a href="mailto:staff@visitseoul.net">staff@visitseoul.net</a></p> <br>
+        <p>관광불편처리센터</p> <br>
+        <p>일반 관광 문의</p> <br>
+      </div>
+
+      <div class="link_wrap">
+        <div class="link">
+          <p>Visit Seoul 모바일 앱</p>
+          <span>
+            <img src="./img/footer_a.png" alt="">
+            <img src="./img/footer_b.png" alt="">
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <!-- 이종민 푸터 -->
+</body>
+</html>

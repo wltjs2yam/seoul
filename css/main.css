@@ -1,0 +1,474 @@
+@charset "UTF-8";
+header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  color: white;
+  background: transparent;
+}
+header .header_in {
+  max-width: 1240px;
+  margin: auto;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_in span {
+  font-size: 2em;
+  font-weight: bold;
+}
+header nav:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li a {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #af9af0;
+}
+header.on {
+  background: rgba(0, 0, 0, 0.3);
+  color: black;
+}
+header.on .header_in {
+  height: 50px;
+}
+header.on h1 i {
+  font-size: 1em;
+}
+header.on h1 span {
+  font-size: 1.5em;
+}
+header.on ul > li > a {
+  padding: 15px;
+  font-size: 14px;
+}
+
+.trigger, .close {
+  display: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section h2 {
+  font-size: 3rem;
+}
+
+#s1 {
+  background: orange;
+  height: 100vh;
+}
+#s1 .main_text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-40vw, -50%);
+  color: white;
+  white-space: nowrap;
+  z-index: 99;
+  margin-bottom: clamp(50px, 3vw, 80px);
+}
+#s1 .main_text h2 {
+  font-size: clamp(20px, 3vw, 80px);
+  margin-bottom: clamp(200px, 20vw, 200px);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+#s1 .main_text p {
+  font-size: clamp(14px, 3vw, 40px);
+  margin-left: clamp(100px, 20vw, 40px);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+#s1 video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#s2 {
+  background: white;
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  padding: 3px;
+}
+#s2 .right {
+  width: 30%;
+  height: 1080px;
+  float: right;
+}
+#s2 .right h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 50%;
+  font-size: clamp(25px, 3vw, 80px);
+}
+#s2 .right p {
+  display: flex;
+  justify-content: center;
+  margin-top: 40%;
+  font-size: clamp(15px, 3vw, 20px);
+  font-weight: bold;
+  text-align: center;
+}
+#s2 .right span {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  text-decoration: underline;
+  font-size: 17px;
+  color: gray;
+}
+#s2 .left {
+  width: 70%;
+  height: 1080px;
+}
+#s2 .left .main_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.swiper_text {
+  position: absolute;
+  bottom: 90px;
+  left: 20px;
+  color: #fff;
+}
+.swiper_text h4 {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: white;
+  background: rgba(255, 255, 255, 0.4);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 20px;
+}
+
+.swiper-pagination-fraction {
+  color: white;
+  width: auto;
+  left: 90%;
+  bottom: 20px;
+  top: auto;
+  padding: 0 5px;
+  border-radius: 9999px;
+  font-size: 11px;
+  line-height: 1.65;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#s3 {
+  background: lightgreen;
+  height: 1080px;
+}
+
+#s4 {
+  background: lightpink;
+  height: 1080px;
+}
+
+#s5 {
+  background: lightsalmon;
+  height: 1080px;
+}
+
+#s6 {
+  background: lightgoldenrodyellow;
+  height: 1080px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background: gray;
+}
+
+@media (max-width: 1000px) {
+  header .header_in {
+    width: 100%;
+    height: 80px;
+  }
+  header .header_in h1 {
+    font-size: 1em;
+    margin-left: 20px;
+  }
+  header .header_in h1 span {
+    font-size: 1.6em;
+  }
+  header .header_in h1 span img {
+    width: 250px;
+  }
+  a {
+    padding: 12px;
+    font-size: 16px;
+  }
+  #s2 {
+    width: 100%;
+  }
+  #s2 .swiper-button-prev, #s2 .swiper-button-next {
+    margin-top: 130px;
+  }
+  #s2 .left {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: -200px;
+  }
+  #s2 .left .main_img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #s2 .right {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    top: 300px;
+  }
+  #s2 .right p {
+    margin-top: 50px;
+  }
+  #s2 .right span {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 830px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 300px;
+    background: #473970;
+    z-index: 999;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in;
+  }
+  header nav.active {
+    right: 0;
+  }
+  header nav ul {
+    padding: 100px 0 0 50px;
+  }
+  header nav ul > li {
+    float: none;
+  }
+  header nav ul > li > a {
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+  }
+  header .close {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: transparent;
+  }
+  header .close i {
+    font-size: 30px;
+    color: white;
+  }
+  header .trigger {
+    display: block;
+  }
+  header .trigger i {
+    font-size: 20px;
+  }
+  header.on {
+    background: rgba(0, 0, 0, 0.3);
+    color: black;
+  }
+  header.on nav ul > li > a {
+    padding: 20px;
+    font-size: 20px;
+  }
+  #s2 {
+    width: 100%;
+  }
+  #s2 .swiper-button-prev, #s2 .swiper-button-next {
+    margin-top: 270px;
+  }
+  .left .swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -60px;
+  }
+  .right {
+    margin-top: 110px;
+  }
+  .right h2 {
+    position: relative;
+    top: 30px;
+  }
+  .right p {
+    position: relative;
+    top: 40px;
+  }
+  .right span {
+    position: relative;
+    top: 50px;
+  }
+}
+/******************* 여기까지 김지선 메인********************/
+/*********** 이종민 푸터 ************/
+footer {
+  background: #333; /* 배경색 설정 */
+  color: white; /* 폰트 색상 설정 */
+  padding: 20px 0; /* 내부 여백 설정 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  font-size: 16px; /* 폰트 크기 설정 */
+}
+
+footer a {
+  color: #fff; /* 링크 색상 설정 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  margin: 0 10px; /* 링크 사이 여백 설정 */
+}
+
+footer a:hover {
+  text-decoration: underline; /* 링크에 밑줄 추가 */
+}
+
+/* 추가적인 스타일링 */
+footer .social-icons {
+  margin-top: 20px; /* 소셜 아이콘 상단 여백 설정 */
+}
+
+.footer_container {
+  background: #464646;
+  padding: 10px 0;
+}
+
+footer {
+  width: 1092px;
+  margin: auto;
+  color: #b8b8b8;
+  position: relative;
+}
+
+footer::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.logo {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.logo p {
+  padding: 20px 0px 0px 25px;
+}
+
+.info {
+  text-align: left;
+  float: left;
+  margin: 1px 40px 0px 100px;
+  color: #fff;
+}
+
+.info p {
+  padding-bottom: 10px;
+}
+
+.info a {
+  color: #fff;
+  margin-left: 1px;
+}
+
+.link_wrap {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.link p {
+  font-size: 20px;
+  float: left;
+  text-align: left;
+  margin: 15px 40px 30px 100px;
+  color: #fff;
+}
+
+.link img {
+  width: 100px;
+}
+
+.link span {
+  margin-left: 52px;
+}
+
+@media (max-width: 1169px) {
+  footer {
+    width: 952px;
+  }
+}
+@media (max-width: 991px) {
+  .footer_container {
+    padding: 10px 10px;
+  }
+  footer {
+    width: 100%;
+  }
+  .link_wrap {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    float: none;
+  }
+  .info {
+    float: none;
+    margin-left: 0;
+  }
+}
+/*********** 이종민 푸터 ************//*# sourceMappingURL=main.css.map */
